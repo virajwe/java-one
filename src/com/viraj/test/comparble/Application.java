@@ -15,6 +15,10 @@ public class Application {
 		//sorting employees array using Comparable interface implementation
 		Arrays.sort(empArr);
 		System.out.println("Default Sorting of Employees list:\n"+Arrays.toString(empArr));
+		System.out.println("---------------------------------------------------------");
+		//Employees list sorted by salary using Comparator class
+		Arrays.sort(empArr, new CompareEmployeeBySalary());
+	    System.out.println("Employees list sorted by Salary:\n"+Arrays.toString(empArr));
 	}
 
 }
